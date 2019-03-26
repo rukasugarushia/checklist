@@ -8,17 +8,17 @@ import javax.persistence.*;
 public class User {
 
     @Id @GeneratedValue
-    private Integer id_user;
+    private Integer idUser;
 
     @ManyToOne
-    private TaskList id_list;
+    private TaskList idList;
 
-    private String email_user;
+    private String emailUser;
 
-    private String password_user;
+    private String passwordUser;
 
-    private String name_user;
+    private String nameUser;
 
-    private Boolean hasPremium_user;
+    private Boolean hasPremiumUser;
 
 }

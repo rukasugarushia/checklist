@@ -9,14 +9,14 @@ import lombok.Data;
 public class TaskList {
 
     @Id @GeneratedValue
-    private Integer id_list;
+    private Integer idList;
 
-    private String status_list;
+    private String statusList;
 
-    private String name_list;
+    private String nameList;
 
-    private String description_list;
+    private String descriptionList;
 
-    private Boolean check_list;
+    private Boolean checkList;
 
 }

@@ -10,17 +10,17 @@ import java.util.Date;
 public class Task {
 
     @Id @GeneratedValue
-    private Integer id_task;
+    private Integer idTask;
 
     @ManyToOne
-    private TaskList id_list;
+    private TaskList idList;
 
-    private String name_task;
+    private String nameTask;
 
-    private String description_task;
+    private String descriptionTask;
 
-    private Date hour_task;
+    private Date hourTask;
 
-    private Boolean check_task;
+    private Boolean checkTask;
 
 }
