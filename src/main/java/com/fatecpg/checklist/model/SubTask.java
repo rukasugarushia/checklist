@@ -11,17 +11,17 @@ import lombok.Data;
 public class SubTask {
 
     @Id @GeneratedValue
-    private Integer id_sub_task;
+    private Integer idSubTask;
 
     @ManyToOne
-    private Task id_task;
+    private Task idTask;
 
-    private String name_sub_task;
+    private String nameSubTask;
 
-    private Date hour_sub_task;
+    private Date hourSubTask;
 
-    private String description_sub_task;
+    private String descriptionSubTask;
 
-    private Boolean check_sub_task;
+    private Boolean checkSubTask;
 
 }
