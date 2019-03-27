@@ -23,11 +23,15 @@ public class UserController {
 
     @GetMapping(path = "/add")
     public @ResponseBody String addNewUser (@RequestParam String email, @RequestParam String name, @RequestParam String password){
-        User user = new User();
-        user.setEmailUser(email);
-        user.setNameUser(name);
-        user.setPasswordUser(password);
-        userRepository.save(user);
+        userService.createUser(email, name, password);
         return "Usuário salvo com sucesso!";
+    }
+
+    @GetMapping(path = "/update")
+    public @ResponseBody String updateUserAccount (User user, @RequestParam String email, @RequestParam String password){
+        user.setEmailUser(email);
+        user.setPasswordUser(password);
+        userService.updateUser(user);
+        return "Dados alterados com sucesso!";
     }
 }
